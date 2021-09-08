@@ -43,6 +43,7 @@ a {
 .links-menu a {
     color: var(--color-one);
     display: flex;
+    font-weight: 500;
     align-items: center;
 }
 
