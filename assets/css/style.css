@@ -26,16 +26,21 @@ a {
     color: var(--color-five) !important;
 }
 
+.nav-container {
+    width: 100%;
+}
+
 .nav-link {
     padding: 7px 10px;
 }
 
 .main-nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     padding: 15px 32px;
-    background-color: var(--color-five);
     color: white;
+    width: 100%;
     max-width: 1366px;
     margin: auto;
 }
@@ -77,6 +82,8 @@ a {
 }
 
 .hero {
+    background: url('../img/hero.jpg') no-repeat;
+    background-size: cover;
     height: 100vh;
     padding: 0px 32px;
 }
