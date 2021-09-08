@@ -70,3 +70,7 @@ a {
 .logo {
     width: 150px;
 }
+
+.search-input, .search-input:focus, .search-input:hover, .search-input:active{
+    border: 1px solid var(--color-one) !important;
+}
