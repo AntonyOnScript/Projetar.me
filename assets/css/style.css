@@ -140,3 +140,34 @@ a {
 .card-text {
     padding: 16px;
 }
+
+.benefits {
+    background-color: rgb(187, 194, 216);
+    padding: 96px 32px;
+}
+
+.benefits-texts {
+    padding-left: 16px;
+    padding-right: 140px;
+}
+
+.svg-ok {
+    fill: #62646A;
+}
+
+.benefits-img {
+    border-radius: 2px;
+}
+
+.benefits-title {
+    padding-bottom: 24px;
+}
+
+.benefits-topic-title {
+    padding-bottom: 8px;
+}
+
+.benefits-topic-paragraph {
+    padding-bottom: 24px;
+    color: #62646A;
+}
