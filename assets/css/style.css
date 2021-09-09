@@ -100,3 +100,15 @@ a {
     background-color: var(--color-one);
     color: var(--color-five);
 }
+
+.partners {
+    margin-bottom: 96px;
+    height: 95px;
+    color: #62646a;
+    font-size: 16px;
+    background-color: #f5f5fb;
+}
+
+.partners-icons img{
+    padding-left: 60px;
+}
