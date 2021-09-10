@@ -141,9 +141,13 @@ a {
     padding: 16px;
 }
 
-.benefits {
+.benefits, .business {
     background-color: rgb(187, 194, 216);
     padding: 96px 32px;
+}
+
+.business {
+    padding: 96px 82px;
 }
 
 .benefits-texts {
@@ -206,4 +210,15 @@ a {
 
 .first-row-explore {
     padding-bottom: 55px;
+}
+
+.benefits-topic-title-2 {
+    padding-bottom: 12px;
+}
+
+.more-about {
+    margin-top: 48px;
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: 700;
 }
