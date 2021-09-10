@@ -171,3 +171,39 @@ a {
     padding-bottom: 24px;
     color: #62646A;
 }
+
+.explore {
+    padding: 96px 32px;
+}
+
+.card-img-explore {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 15px;
+}
+
+.line-item {
+    width: 48px;
+    height: 3px !important;
+    background-color: var(--color-four);
+    transition: .3s all;
+}
+
+.explore h1 {
+    padding-bottom: 64px;
+}
+
+.explore .row .col {
+    cursor: pointer;
+}
+
+.explore .row .col:hover .line-item {
+    width: 88px;
+    background-color: var(--color-one);
+}
+
+.first-row-explore {
+    padding-bottom: 55px;
+}
