@@ -196,6 +196,7 @@ a {
     height: 3px !important;
     background-color: var(--color-four);
     transition: .3s all;
+    margin-bottom: 14px;
 }
 
 .explore h1 {
