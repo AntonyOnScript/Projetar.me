@@ -47,6 +47,8 @@ a {
     width: 100%;
     max-width: 1366px;
     margin: auto;
+    transition: background-color .3s;
+    z-index: 1001;
 }
 
 .links-menu a {
@@ -78,7 +80,7 @@ a {
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
 }
 
 .search-input, .search-input:focus, .search-input:hover, .search-input:active{
