@@ -42,7 +42,7 @@ a {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    padding: 15px 32px;
+    padding: 15px 82px;
     color: white;
     width: 100%;
     max-width: 1366px;
@@ -92,7 +92,7 @@ a {
     background: url('../img/hero.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
-    padding: 0px 32px;
+    padding: 0px 82px;
 }
 
 .circle-link {
@@ -109,7 +109,7 @@ a {
 }
 
 .services {
-    padding: 0px 32px 96px 32px;
+    padding: 0px 67px 96px 67px;
 }
 
 .partners {
@@ -146,7 +146,7 @@ a {
 
 .benefits, .business {
     background-color: rgb(187, 194, 216);
-    padding: 96px 32px;
+    padding: 96px 82px;
 }
 
 .business {
@@ -180,7 +180,7 @@ a {
 }
 
 .explore {
-    padding: 96px 32px;
+    padding: 96px 82px;
 }
 
 .card-img-explore {
