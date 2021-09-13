@@ -153,7 +153,7 @@ a {
     padding: 96px 82px;
 }
 
-.benefits-texts {
+.benefits-texts, .announce-texts {
     padding-left: 16px;
     padding-right: 140px;
 }
@@ -225,4 +225,58 @@ a {
     padding: 12px 24px; 
     font-size: 16px; 
     font-weight: 700;
+}
+
+.shift-section {
+    padding: 96px 67px;
+}
+
+.cartaz {
+    padding: 0px 68px 0px 64px;
+}
+
+.cartaz-items li {
+    padding: 0px 15px;
+}
+
+.announce-texts {
+    margin-top: 96px;
+    background-color: var(--color-two); 
+    padding: 36px 76px;
+}
+
+.announce-texts h3 {
+    padding-bottom: 16px;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.announce-topic-title {
+    padding-bottom: 24px;
+}
+
+.float-text {
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    border-radius: 20px; 
+    padding: 5px; 
+    font-weight: 800; 
+    height: fit-content;
+}
+
+.founder-paragraph {
+    color: #7a7d85; 
+    font-size: 16px; 
+    font-weight: 500;
+}
+
+.founder-text {
+    color: var(--color-one); 
+    font-size: 25px;
+}
+
+.founder-paragraph img {
+    height: 36px;
 }
