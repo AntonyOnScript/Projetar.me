@@ -239,7 +239,7 @@ a {
     padding: 0px 15px;
 }
 
-.announce-texts {
+.announce-texts, .banner-snippet {
     margin-top: 96px;
     background-color: var(--color-two); 
     padding: 36px 76px;
@@ -300,4 +300,32 @@ a {
 
 .guide-img {
     margin-bottom: 16px;
+}
+
+
+.c-white {
+    color: white !important;
+}
+
+.banner-snippet {
+    min-height:  440px;
+    padding: 0px 82px 96px 82px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.banner-texts {
+    background: url("../img/banner-snippet/background.png");
+    padding: 120px 96px;
+}
+
+.banner-texts  h1{
+    font-size: 48px;
+}
+
+.btn-width {
+    max-width: fit-content;
+}
+
+.p-40 {
+    padding-bottom: 40px;
 }
