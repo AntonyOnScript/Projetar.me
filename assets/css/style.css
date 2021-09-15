@@ -45,7 +45,6 @@ a {
     padding: 15px 82px;
     color: white;
     width: 100%;
-    max-width: 1366px;
     margin: auto;
     transition: background-color .3s;
     z-index: 1001;
