@@ -329,3 +329,28 @@ a {
 .p-40 {
     padding-bottom: 40px;
 }
+
+.footer {
+    padding: 82px 96px;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    margin-bottom: 16px;
+    color: #62646a;
+}
+
+.footer-link:hover, .footer-link:active {
+    color: #62646a;
+    text-decoration: underline !important;
+}
