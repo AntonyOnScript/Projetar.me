@@ -17,7 +17,9 @@ a {
 .border-button-link {
     padding: 7px 20px;
     border: 1px solid var(--color-one);
+    color: var(--color-five);
     border-radius: .3rem;
+    height: 30px;
 }
 
 .border-button-link:hover {
@@ -50,20 +52,29 @@ a {
     z-index: 1001;
 }
 
-.links-menu a {
-    color: var(--color-one);
+.nav-link{
+    color: white;
     display: flex;
     font-weight: 500;
     align-items: center;
 }
 
-.links-menu a:hover {
-    color: var(--color-two);
+.nav-link:hover {
+    color: var(--color-two) !important;
 }
 
 .search-bar {
     width: unset;
-    max-width: 100%;
+    max-width: 100%;    
+    height: 34px;
+}
+
+.search-bar input, .search-bar input:hover, .search-bar input:focus, .search-bar input:active{
+    height: 34px;
+}
+
+.nav-container .search-bar {
+    visibility: hidden;
 }
 
 .search-btn {
@@ -92,6 +103,11 @@ a {
     background-size: cover;
     height: 100vh;
     padding: 0px 82px;
+    color: white;
+}
+
+.hero h1 {
+    color: white;
 }
 
 .circle-link {
