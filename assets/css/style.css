@@ -280,3 +280,16 @@ a {
 .founder-paragraph img {
     height: 36px;
 }
+
+.user-block {
+    padding: 16px 0px 12px 16px;
+}
+
+.date-paragraph {
+    color: #95979d;
+}
+
+.more-projects {
+    padding: 96px 67px;
+    background-color: #f5f5f5;
+}
