@@ -365,3 +365,21 @@ ul {
     color: #62646a;
     text-decoration: underline !important;
 }
+
+@media only screen and (max-width: 1200px) {
+    .benefits-texts, .benefits-img {
+        padding: 0px 16px;
+    }
+
+    .benefits-texts {
+        padding-bottom: 24px;
+    }
+
+    .benefits-img-container {
+        justify-content: center;
+    }
+
+    .benefits-img {
+        min-width: 100%;
+    }
+}
