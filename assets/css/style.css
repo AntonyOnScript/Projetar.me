@@ -387,3 +387,8 @@ ul {
         padding-top: 24px;
     }
 }
+
+.services .uk-active {
+    display: flex;
+    justify-content: center;
+}
