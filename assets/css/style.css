@@ -392,3 +392,11 @@ ul {
     display: flex;
     justify-content: center;
 }
+
+.more-projects-card-img {
+    width: 100% !important;
+}
+
+.more-projects .uk-panel {
+    width: unset;
+}
