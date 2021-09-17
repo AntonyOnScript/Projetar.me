@@ -382,4 +382,8 @@ ul {
     .benefits-img {
         min-width: 100%;
     }
+
+    .business-img {
+        padding-top: 24px;
+    }
 }
