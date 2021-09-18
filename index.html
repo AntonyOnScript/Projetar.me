@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />  
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico'/>
     <link rel="stylesheet" href="assets/css/uikit.css">
     <link rel="stylesheet" href="assets/css/uikit-rtl.css">
     <script src="assets/js/uikit.js"></script>
@@ -16,614 +16,718 @@
     <title>Projetar.me</title>
 </head>
 <body>
-    <div class="nav-container d-flex justify-content-center">
-        <nav class="nav main-nav">
-            <a href="#" class="d-flex justify-content-end align-items-end"><img src="assets/img/logo-projetar.svg" alt="Logo" class="logo"></a>
-            <div class="input-group search-bar align-self-center">
-                <input type="text" class="form-control shadow-none search-input" placeholder="Pesquise algo" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-light search-btn fw-500" type="button" id="button-addon2">Pesquisar</button>
-            </div>
-            <ul class="nav links-menu ms-3">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Descubra</a>
-                <a href="#" class="nav-link">Seja um Engenheiro</a>
-                <a href="#" class="nav-link">Taxas</a>
-                <a href="#" class="nav-link">Ajuda</a>
-                <a href="#" class="nav-link">Contato</a>
-                <a href="#" class="border-button-link d-flex align-items-center fw-500 align-self-center">Entre</a>
-            </ul>
-        </nav>
+
+
+<div id="offcanvas-nav" class="mobile-menu" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+
+        <ul class="uk-nav uk-nav-default links-mobile">
+            <a href="#" class="border-button-link-2 d-flex align-items-center fw-500 align-self-center text-center">Entre</a>
+            <li class="uk-active mt-4 mb-2"><a href="#">Geral</a></li>
+        </ul>
+
     </div>
-    
-    <section class="hero row mw-100 d-flex flex-column justify-content-center m-0">
-        <div class="col col-xl-6 p-0 d-flex flex-column justify-content-center">
-            <h1 class="mb-5">Ache os melhores <i>engenheiros</i> para sua empresa hoje mesmo!</h1>
-            <div class="input-group search-bar mb-4">
-                <input type="text" class="form-control shadow-none search-input" placeholder="Pesquise algo" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-light search-btn fw-500" type="button" id="button-addon2">Pesquisar</button>
-            </div>
-            <ul class="p-0 m-0 d-flex">
-                <p class="m-0 fw-500 d-flex justify-end">Popular:</p>
-                <a href="#" class="circle-link ms-3 me-2 fw-500">Casa</a>
-                <a href="#" class="circle-link me-2 fw-500">Jardim</a>
-                <a href="#" class="circle-link fw-500">Praia</a>
-            </ul>
-        </div>
-    </section>
+</div>
 
-    <div class="partners mw-100 d-flex justify-content-center">
-        <p class="fw-500 m-0 pe-4 d-flex align-items-center text-nowrap">Apoiado por:</p>
-        <div uk-slider class=" d-flex align-items-center justify-content-center">
-            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-child-width-1-3@s d-flex align-items-center justify-content-center mw-100">
-                <li class="pe-2 ps-2">
-                    <img src="assets/img/partners/google.png" alt="">
-                </li>
-                <li class="pe-2 ps-2">
-                    <img src="assets/img/partners/netflix.png" alt="">
-                </li>
-                <li class="pe-2 ps-2">
-                    <img src="assets/img/partners/paypal.png"  alt="">
-                </li>
-                <li class="pe-2 ps-2">
-                    <img src="assets/img/partners/peg.png"  alt="">
-                </li>
-            </ul>
+<div class="nav-container d-flex justify-content-center">
+    <nav class="nav main-nav">
+        <button class="uk-button uk-button-default mobile-menu-button d-block d-xl-none" type="button" uk-toggle="target: #offcanvas-nav">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mobile-menu-icon" width="23" height="19" viewBox="0 0 23 19"><rect y="16" width="23" height="3" rx="1.5" fill="#555"></rect><rect width="23" height="3" rx="1.5" fill="#555"></rect><rect y="8" width="23" height="3" rx="1.5" fill="#555"></rect></svg>
+        </button>
+        <a href="#" class="d-flex justify-content-end align-items-end"><img src="assets/img/logo-projetar.svg"
+                                                                            alt="Logo" class="logo"></a>
+        <div class="input-group search-bar align-self-center d-none d-xl-flex">
+            <input type="text" class="form-control shadow-none search-input" placeholder="Pesquise algo"
+                   aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-light search-btn fw-500" type="button" id="button-addon2">Pesquisar</button>
         </div>
-        <!--<div class="partners-icons d-flex align-items-center mw-100">
-            <img src="assets/img/partners/google.png" alt="">
-            <img src="assets/img/partners/netflix.png" alt="">
-            <img src="assets/img/partners/paypal.png"  alt="">
-            <img src="assets/img/partners/peg.png"  alt="">
-        </div>-->
+        <ul class="nav links-menu ms-3 d-none d-xl-flex">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Descubra</a>
+            <a href="#" class="nav-link">Seja um Engenheiro</a>
+            <a href="#" class="nav-link">Taxas</a>
+            <a href="#" class="nav-link">Ajuda</a>
+            <a href="#" class="nav-link">Contato</a>
+            <a href="#" class="border-button-link d-flex align-items-center fw-500 align-self-center">Entre</a>
+        </ul>
+    </nav>
+</div>
+
+<section class="hero row mw-100 d-flex flex-column justify-content-center m-0">
+    <div class="col col-xl-6 p-0 d-flex flex-column justify-content-center">
+        <h1 class="mb-5">Ache os melhores <i>engenheiros</i> para sua empresa hoje mesmo!</h1>
+        <div class="input-group search-bar mb-4">
+            <input type="text" class="form-control shadow-none search-input" placeholder="Pesquise algo"
+                   aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-light search-btn fw-500" type="button" id="button-addon2">Pesquisar</button>
+        </div>
+        <ul class="p-0 m-0 d-flex">
+            <p class="m-0 fw-500 d-flex justify-end">Popular:</p>
+            <a href="#" class="circle-link ms-3 me-2 fw-500">Casa</a>
+            <a href="#" class="circle-link me-2 fw-500">Jardim</a>
+            <a href="#" class="circle-link fw-500">Praia</a>
+        </ul>
+    </div>
+</section>
+
+<div class="partners mw-100 d-flex justify-content-center">
+    <p class="fw-500 m-0 pe-4 d-flex align-items-center text-nowrap">Apoiado por:</p>
+    <div uk-slider class=" d-flex align-items-center justify-content-center">
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-child-width-1-3@s d-flex align-items-center justify-content-center mw-100">
+            <li class="pe-2 ps-2">
+                <img src="assets/img/partners/google.png" alt="">
+            </li>
+            <li class="pe-2 ps-2">
+                <img src="assets/img/partners/netflix.png" alt="">
+            </li>
+            <li class="pe-2 ps-2">
+                <img src="assets/img/partners/paypal.png" alt="">
+            </li>
+            <li class="pe-2 ps-2">
+                <img src="assets/img/partners/peg.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <!--<div class="partners-icons d-flex align-items-center mw-100">
+        <img src="assets/img/partners/google.png" alt="">
+        <img src="assets/img/partners/netflix.png" alt="">
+        <img src="assets/img/partners/paypal.png"  alt="">
+        <img src="assets/img/partners/peg.png"  alt="">
+    </div>-->
+</div>
+
+<section class="services">
+    <h1 class="mb-5 fw-500 services-title">Nossos principais serviços</h1>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-small">
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-01.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-02.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-03.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-04.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-05.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-06.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-07.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-08.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/category/slide-09.jpg" alt="">
+                    <div class="uk-position-top uk-panel card-text">
+                        <p class="m-0">Avante!</p>
+                        <h4 class="m-0">A empresa número 1</h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover arrow-next-slide ms-1" href="#"
+           uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover arrow-next-slide me-1" href="#"
+           uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="row mw-100">
+        <div class="benefits-texts col-12 col-xl-6">
+            <h1 class="m-0 benefits-title">A Brasil inteiro com a gente, venha fazer parte do time!</h1>
+            <h5 class="d-flex benefits-topic-title m-0">
+                <svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil
+            </h5>
+            <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates,
+                just project-based pricing.</h5>
+            <h5 class="d-flex benefits-topic-title m-0">
+                <svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil
+            </h5>
+            <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates,
+                just project-based pricing.</h5>
+            <h5 class="d-flex benefits-topic-title m-0">
+                <svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil
+            </h5>
+            <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates,
+                just project-based pricing.</h5>
+            <h5 class="d-flex benefits-topic-title m-0">
+                <svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil
+            </h5>
+            <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates,
+                just project-based pricing.</h5>
+        </div>
+        <div class="col-12 col-xl-6 d-flex align-items-center benefits-img-container p-0">
+            <img src="assets/img/benefits/video-thumb.png" class="mw-100 benefits-img" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="explore">
+    <h1>Explore o mercado</h1>
+
+    <div class="row">
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+        <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+        <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
     </div>
 
-    <section class="services">
-        <h1 class="mb-5 fw-500 services-title">Nossos principais serviços</h1>
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+    <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+    <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
 
-            <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-small">
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-01.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-02.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-03.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-04.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-05.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-06.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-07.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-08.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/category/slide-09.jpg" alt="">
-                        <div class="uk-position-top uk-panel card-text">
-                            <p class="m-0">Avante!</p>
-                            <h4 class="m-0">A empresa número 1</h4>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover arrow-next-slide ms-1" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover arrow-next-slide me-1" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
+    <div class="row">
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
         </div>
-    </section>
-
-    <section class="benefits">
-        <div class="row mw-100">
-            <div class="benefits-texts col-12 col-xl-6">
-                <h1 class="m-0 benefits-title">A Brasil inteiro com a gente, venha fazer parte do time!</h1>
-                <h5 class="d-flex benefits-topic-title m-0"><svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg> 1° Empresa do ramo no Brasil</h5>
-                <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates, just project-based pricing.</h5>
-                <h5 class="d-flex benefits-topic-title m-0"><svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg> 1° Empresa do ramo no Brasil</h5>
-                <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates, just project-based pricing.</h5>
-                <h5 class="d-flex benefits-topic-title m-0"><svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg> 1° Empresa do ramo no Brasil</h5>
-                <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates, just project-based pricing.</h5>
-                <h5 class="d-flex benefits-topic-title m-0"><svg class="align-center me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg> 1° Empresa do ramo no Brasil</h5>
-                <h5 class="m-0 benefits-topic-paragraph">Find high-quality services at every price point. No hourly rates, just project-based pricing.</h5>
-            </div>
-            <div class="col-12 col-xl-6 d-flex align-items-center benefits-img-container p-0">
-                <img src="assets/img/benefits/video-thumb.png" class="mw-100 benefits-img" alt="">
-            </div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
         </div>
-    </section>
-
-    <section class="explore">
-        <h1>Explore o mercado</h1>
-
-        <div class="row">
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-        </div>
-
         <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
         <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
-
-        <div class="row">
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
-            <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
-            <div class="col">
-                <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
-                <div class="line-item mx-auto"></div>
-                <p class="text-center fw-500">Gráficos e Vetores</p>
-            </div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
         </div>
-
-    </section>
-
-    <section class="business">
-        <div class="row mw-100">
-            <div class="business-texts col-12 col-xl-6">
-                <h3 class="d-flex m-0" style="padding-bottom: 32px;">
-                    <span class="fw-700">Projetar·me</span>&nbsp;Plus. 
-                    <span class="align-self-top ms-2 float-text">Novidade</span>
-                </h3>
-                <h1 class="m-0 business-title fw-700">A Brasil inteiro com a gente, e você?</h1>
-                <h5 class="d-flex business-topic-title m-0" style="padding-bottom: 32px;">
-                    Re-invente sua empresa do zero e mude completamente, essa é a nova onda.
-                </h5>
-
-                <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
-                    <svg class="me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg>
-                    1° Empresa do ramo no Brasil
-                </h5>
-
-                <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
-                    <svg class="me-3 svg-ok"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg>
-                    1° Empresa do ramo no Brasil, e aí vamo fechar esse negócio?
-                </h5>
-
-                <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
-                    <svg class="me-3 svg-ok"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg>
-                    1° Empresa do ramo no Brasil, e aí vamo fechar esse negócio?
-                </h5>
-
-                <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
-                    <svg class="me-3 svg-ok"  viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path><path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path></svg>
-                    1° Empresa do ramo no Brasil
-                </h5>
-
-                <button class="btn btn-outline-light search-btn more-about" type="button" id="button-addon2" >Explore Essa Nova Experiencia</button>
-            </div>
-            <div class="col-12 col-xl-6 d-flex align-items-center p-0">
-                <img src="assets/img/business/business-desktop-870-x1.png" class="mw-100 benefits-img business-img" alt="">
-            </div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
         </div>
-    </section>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="w-100 p-3 d-block p-lg-0 d-lg-none"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+        <div class="w-100 p-3 d-block d-sm-none p-sm-0"></div>
+        <div class="col">
+            <img src="assets/img/svg-icons/ink.svg" class="card-img-explore" alt="...">
+            <div class="line-item mx-auto"></div>
+            <p class="text-center fw-500">Gráficos e Vetores</p>
+        </div>
+    </div>
 
-    <section class="shift-section">
-        <div class="cartaz-container">
+</section>
+
+<section class="business">
+    <div class="row mw-100">
+        <div class="business-texts col-12 col-xl-6">
+            <h3 class="d-flex m-0" style="padding-bottom: 32px;">
+                <span class="fw-700">Projetar·me</span>&nbsp;Plus.
+                <span class="align-self-top ms-2 float-text">Novidade</span>
+            </h3>
+            <h1 class="m-0 business-title fw-700">A Brasil inteiro com a gente, e você?</h1>
+            <h5 class="d-flex business-topic-title m-0" style="padding-bottom: 32px;">
+                Re-invente sua empresa do zero e mude completamente, essa é a nova onda.
+            </h5>
+
+            <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
+                <svg class="me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil
+            </h5>
+
+            <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
+                <svg class="me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil, e aí vamo fechar esse negócio?
+            </h5>
+
+            <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
+                <svg class="me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil, e aí vamo fechar esse negócio?
+            </h5>
+
+            <h5 class="d-flex business-topic-title benefits-topic-title-2 m-0">
+                <svg class="me-3 svg-ok" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 1.75C4.54822 1.75 1.75 4.54822 1.75 8C1.75 11.4518 4.54822 14.25 8 14.25C11.4518 14.25 14.25 11.4518 14.25 8C14.25 4.54822 11.4518 1.75 8 1.75ZM0.25 8C0.25 3.71979 3.71979 0.25 8 0.25C12.2802 0.25 15.75 3.71979 15.75 8C15.75 12.2802 12.2802 15.75 8 15.75C3.71979 15.75 0.25 12.2802 0.25 8Z"></path>
+                    <path d="M11.5303 5.46967C11.8232 5.76256 11.8232 6.23744 11.5303 6.53033L7.53033 10.5303C7.23744 10.8232 6.76256 10.8232 6.46967 10.5303L4.46967 8.53033C4.17678 8.23744 4.17678 7.76256 4.46967 7.46967C4.76256 7.17678 5.23744 7.17678 5.53033 7.46967L7 8.93934L10.4697 5.46967C10.7626 5.17678 11.2374 5.17678 11.5303 5.46967Z"></path>
+                </svg>
+                1° Empresa do ramo no Brasil
+            </h5>
+
+            <button class="btn btn-outline-light search-btn more-about" type="button" id="button-addon2">Explore Essa
+                Nova Experiencia
+            </button>
+        </div>
+        <div class="col-12 col-xl-6 d-flex align-items-center p-0">
+            <img src="assets/img/business/business-desktop-870-x1.png" class="mw-100 benefits-img business-img" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="shift-section">
+    <div class="cartaz-container">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="center: true">
 
             <ul class="uk-slider-items uk-grid cartaz-items">
                 <li class="uk-width-4-4 d-flex row">
                     <img src="assets/img/thumbnails/01.jpg" class="uk-panel d-flex col align-items-center p-0" alt="">
                     <div class="d-flex flex-column col justify-content-center cartaz">
-                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png" alt=""></p>
+                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png"
+                                                                                 alt=""></p>
                         <p class="founder-text">
-                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working."
+                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens
+                            the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's
+                            working."
                         </p>
                     </div>
                 </li>
                 <li class="uk-width-4-4 d-flex row">
                     <img src="assets/img/thumbnails/01.jpg" class="uk-panel d-flex col align-items-center p-0" alt="">
                     <div class="d-flex flex-column col justify-content-center cartaz">
-                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png" alt=""></p>
+                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png"
+                                                                                 alt=""></p>
                         <p class="founder-text">
-                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working."
+                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens
+                            the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's
+                            working."
                         </p>
                     </div>
                 </li>
                 <li class="uk-width-4-4 d-flex row">
                     <img src="assets/img/thumbnails/01.jpg" class="uk-panel d-flex col align-items-center p-0" alt="">
                     <div class="d-flex flex-column col justify-content-center cartaz">
-                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png" alt=""></p>
+                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png"
+                                                                                 alt=""></p>
                         <p class="founder-text">
-                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working."
+                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens
+                            the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's
+                            working."
                         </p>
                     </div>
                 </li>
                 <li class="uk-width-4-4 d-flex row">
                     <img src="assets/img/thumbnails/01.jpg" class="uk-panel d-flex col align-items-center p-0" alt="">
                     <div class="d-flex flex-column col justify-content-center cartaz">
-                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png" alt=""></p>
+                        <p class="founder-paragraph">Kay Kim, Co-fundador | <img src="assets/img/thumbnails/logo01.png"
+                                                                                 alt=""></p>
                         <p class="founder-text">
-                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's working."
+                            "It's extremely exciting that Fiverr has freelancers from all over the world — it broadens
+                            the talent pool. One of the best things about Fiverr is that while we're sleeping, someone's
+                            working."
                         </p>
                     </div>
                 </li>
             </ul>
-        
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover arrow-next-slide ms-0 me-1" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover arrow-next-slide me-0 ms-1" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-        
-        </div>
-        </div>
 
-        <div class="d-flex justify-content-start announce-block">
-            <div class="announce-texts w-100">
-                <h3 class="d-flex m-0">
-                    <span class="fw-700">Projetar·me</span>&nbsp;Plus&nbsp;Prime.
-                </h3>
-                <h1 class="m-0 benefits-title fw-700">A Brasil inteiro com a gente, e você?</h1>
-                <h5 class="d-flex announce-topic-title m-0">
-                    Re-invente sua empresa do zero e mude completamente, essa é a nova onda.
-                </h5>
-                <button class="btn btn-outline-light search-btn more-about m-0" type="button" id="button-addon2" >Explore Essa Nova Experiencia</button>
-            </div>
-        </div>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover arrow-next-slide ms-0 me-1" href="#"
+               uk-slidenav-next uk-slider-item="next"></a>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover arrow-next-slide me-0 ms-1" href="#"
+               uk-slidenav-previous uk-slider-item="previous"></a>
 
-    </section>
-
-    <section class="more-projects">
-
-        <div class="d-flex justify-content-between services-title-container">
-            <h1 class="mb-5 fw-500 services-title">Nosso principais serviços</h1>
-            <a href="#" class="mb-5 d-none d-md-flex align-items-end fw-500 text-nowrap">Veja mais projetos ></a>
-        </div>
-        
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
-
-            <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small">
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="uk-panel">
-                        <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
-                    </div>
-                    <div class="uk-card uk-card-default">
-                        <div class="uk-card-footer user-block">
-                            <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                <div class="uk-width-auto p-0">
-                                    <img class="uk-border-circle p-0" width="40" height="40" src="assets/img/logos/black.png">
-                                </div>
-                                <div class="uk-width-expand">
-                                    <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">Development and Design</p>
-                                    <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">April 01, 2016</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover arrow-next-slide ms-1" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover arrow-next-slide me-1" href="#" uk-slidenav-next uk-slider-item="next"></a>
-        
-        </div>
-
-        <div class="d-flex d-md-none justify-content-end mt-5 services-title-container">
-            <a href="#" class="mb-5 d-flex align-items-end fw-500 text-nowrap">Veja mais projetos ></a>
-        </div>
-    </section>
-
-    <section class="guides">
-        <div class="d-flex justify-content-between">
-            <h1 class="mb-5 fw-500 services-title p-0">Leia nossos guias</h1>
-            <a href="#" class="mb-5 d-flex align-items-end fw-500 d-none d-md-flex">Veja mais guias ></a>
-        </div>
-        <div class="row">
-            <div class="col d-flex flex-column">
-                <img src="assets/img/guides/guide-start-online-business-552-x2.png" class="guide-img" alt="">
-                <a href="#"><h5 class="guide-title fw-700 m-0">Trabalhe de casa e ganhe dinheiro</h5></a>
-                <p style="color: #95979d;" class="guide-text">O novo estilo de vida que milhões adotam.</p>
-            </div>
-            <div class="mw-100 d-block d-md-none p-3"></div>
-            <div class="col d-flex flex-column">
-                <img src="assets/img/guides/guide-start-online-business-552-x2.png" class="guide-img" alt="">
-                <a href="#"><h5 class="guide-title fw-700 m-0">Trabalhe de casa e ganhe dinheiro</h5></a>
-                <p style="color: #95979d;" class="guide-text">O novo estilo de vida que milhões adotam.</p>
-            </div>
-            <div class="mw-100 d-block d-lg-none p-3"></div>
-            <div class="col d-flex flex-column">
-                <img src="assets/img/guides/guide-start-online-business-552-x2.png" class="guide-img" alt="">
-                <a href="#"><h5 class="guide-title fw-700 m-0">Trabalhe de casa e ganhe dinheiro</h5></a>
-                <p style="color: #95979d;" class="guide-text">O novo estilo de vida que milhões adotam.</p>
-            </div>
-        </div>
-        <div class="d-flex justify-content-end mt-3">
-            <a href="#" class="d-flex d-md-none align-items-end fw-500">Veja mais guias ></a>
-        </div>
-    </section>
-
-    <div class="d-flex justify-content-start banner-snippet mt-0">
-        <div class="banner-texts w-100 d-flex flex-column justify-content-center">
-            <h1 class="m-0 benefits-title fw-700 c-white pb-2">A Brasil inteiro com a gente</h1>
-            <h1 class="m-0 benefits-title fw-700 c-white p-40">Vai perder essa?</h1>
-            <button class="btn btn-outline-light search-btn more-about m-0 btn-width" type="button">Explore Essa Nova Experiencia</button>
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="row mw-100 gap-2 m-0">
-            <ul class="col p-0 d-flex flex-column">
-                <p class="footer-title fw-700">Categorias</p>
-                <a href="#" class="footer-link">Música</a>
-                <a href="#" class="footer-link">Piano</a>
-                <a href="#" class="footer-link">Programação</a>
-                <a href="#" class="footer-link">Construção Civil</a>
-                <a href="#" class="footer-link">Eletrônica</a>
-                <a href="#" class="footer-link">Ciência de dados</a>
-                <a href="#" class="footer-link">Fl Studio</a>
-                <a href="#" class="footer-link">Produção</a>
-                <a href="#" class="footer-link">Arte</a>
-                <a href="#" class="footer-link">Mais</a>
-            </ul>
-            <div class="mw-100 d-block d-md-none"></div>
-            <ul class="col p-0 d-flex flex-column">
-                <p class="footer-title fw-700">Sobre</p>
-                <a href="#" class="footer-link">Carreiras</a>
-                <a href="#" class="footer-link">Vagas</a>
-                <a href="#" class="footer-link">Contato</a>
-                <a href="#" class="footer-link">Localização</a>
-                <a href="#" class="footer-link">API</a>
-                <a href="#" class="footer-link">CNPJ</a>
-            </ul>
-            <div class="mw-100 d-block d-md-none"></div>
-            <ul class="col p-0 d-flex flex-column">
-                <p class="footer-title fw-700">Ajuda e politicas</p>
-                <a href="#" class="footer-link">Politica de compra</a>
-                <a href="#" class="footer-link">Politica de privacidade</a>
-                <a href="#" class="footer-link">Termos de uso</a>
-                <a href="#" class="footer-link">Ajuda</a>
-            </ul>
-            <div class="mw-100 d-block d-lg-none"></div>
-            <ul class="col p-0 d-flex flex-column">
-                <p class="footer-title fw-700">Comunidade</p>
-                <a href="#" class="footer-link">Se torne Premium</a>
-                <a href="#" class="footer-link">Compartilhe</a>
-                <a href="#" class="footer-link">Doe</a>
-                <a href="#" class="footer-link">Mantenha a comunidade</a>
-                <a href="#" class="footer-link">Bolsas</a>
-                <a href="#" class="footer-link">Internos</a>
-            </ul>
-            <div class="mw-100 d-block d-md-none"></div>
-            <ul class="col p-0 d-flex flex-column">
-                <p class="footer-title fw-700">Extras</p>
-                <a href="#" class="footer-link">Skype</a>
-                <a href="#" class="footer-link">Nuvem</a>
-                <a href="#" class="footer-link">Cloud</a>
-                <a href="#" class="footer-link">AWS</a>
-                <a href="#" class="footer-link">Azure</a>
-                <a href="#" class="footer-link">No things</a>
-                <a href="#" class="footer-link">Github</a>
-                <a href="#" class="footer-link">Twitter</a>
-            </ul>
+    <div class="d-flex justify-content-start announce-block">
+        <div class="announce-texts w-100">
+            <h3 class="d-flex m-0">
+                <span class="fw-700">Projetar·me</span>&nbsp;Plus&nbsp;Prime.
+            </h3>
+            <h1 class="m-0 benefits-title fw-700">A Brasil inteiro com a gente, e você?</h1>
+            <h5 class="d-flex announce-topic-title m-0">
+                Re-invente sua empresa do zero e mude completamente, essa é a nova onda.
+            </h5>
+            <button class="btn btn-outline-light search-btn more-about m-0" type="button" id="button-addon2">Explore
+                Essa Nova Experiencia
+            </button>
         </div>
-    </footer>
+    </div>
+
+</section>
+
+<section class="more-projects">
+
+    <div class="d-flex justify-content-between services-title-container">
+        <h1 class="mb-5 fw-500 services-title">Nosso principais serviços</h1>
+        <a href="#" class="mb-5 d-none d-md-flex align-items-end fw-500 text-nowrap">Veja mais projetos ></a>
+    </div>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small">
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="assets/img/more-projects/skydesigner.png" class="more-projects-card-img" alt="">
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-footer user-block">
+                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                            <div class="uk-width-auto p-0">
+                                <img class="uk-border-circle p-0" width="40" height="40"
+                                     src="assets/img/logos/black.png">
+                            </div>
+                            <div class="uk-width-expand">
+                                <p class="uk-card-title uk-margin-remove-bottom pe-1" style="font-size: 14px;">
+                                    Development and Design</p>
+                                <p class="uk-text-meta uk-margin-remove-top date-paragraph" style="color: #95979d;">
+                                    April 01, 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover arrow-next-slide ms-1" href="#"
+           uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover arrow-next-slide me-1" href="#"
+           uk-slidenav-next uk-slider-item="next"></a>
+
+    </div>
+
+    <div class="d-flex d-md-none justify-content-end mt-5 services-title-container">
+        <a href="#" class="mb-5 d-flex align-items-end fw-500 text-nowrap">Veja mais projetos ></a>
+    </div>
+</section>
+
+<section class="guides">
+    <div class="d-flex justify-content-between">
+        <h1 class="mb-5 fw-500 services-title p-0">Leia nossos guias</h1>
+        <a href="#" class="mb-5 d-flex align-items-end fw-500 d-none d-md-flex">Veja mais guias ></a>
+    </div>
+    <div class="row">
+        <div class="col d-flex flex-column">
+            <img src="assets/img/guides/guide-start-online-business-552-x2.png" class="guide-img" alt="">
+            <a href="#"><h5 class="guide-title fw-700 m-0">Trabalhe de casa e ganhe dinheiro</h5></a>
+            <p style="color: #95979d;" class="guide-text">O novo estilo de vida que milhões adotam.</p>
+        </div>
+        <div class="mw-100 d-block d-md-none p-3"></div>
+        <div class="col d-flex flex-column">
+            <img src="assets/img/guides/guide-start-online-business-552-x2.png" class="guide-img" alt="">
+            <a href="#"><h5 class="guide-title fw-700 m-0">Trabalhe de casa e ganhe dinheiro</h5></a>
+            <p style="color: #95979d;" class="guide-text">O novo estilo de vida que milhões adotam.</p>
+        </div>
+        <div class="mw-100 d-block d-lg-none p-3"></div>
+        <div class="col d-flex flex-column">
+            <img src="assets/img/guides/guide-start-online-business-552-x2.png" class="guide-img" alt="">
+            <a href="#"><h5 class="guide-title fw-700 m-0">Trabalhe de casa e ganhe dinheiro</h5></a>
+            <p style="color: #95979d;" class="guide-text">O novo estilo de vida que milhões adotam.</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end mt-3">
+        <a href="#" class="d-flex d-md-none align-items-end fw-500">Veja mais guias ></a>
+    </div>
+</section>
+
+<div class="d-flex justify-content-start banner-snippet mt-0">
+    <div class="banner-texts w-100 d-flex flex-column justify-content-center">
+        <h1 class="m-0 benefits-title fw-700 c-white pb-2">A Brasil inteiro com a gente</h1>
+        <h1 class="m-0 benefits-title fw-700 c-white p-40">Vai perder essa?</h1>
+        <button class="btn btn-outline-light search-btn more-about m-0 btn-width" type="button">Explore Essa Nova
+            Experiencia
+        </button>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="row mw-100 gap-2 m-0">
+        <ul class="col p-0 d-flex flex-column">
+            <p class="footer-title fw-700">Categorias</p>
+            <a href="#" class="footer-link">Música</a>
+            <a href="#" class="footer-link">Piano</a>
+            <a href="#" class="footer-link">Programação</a>
+            <a href="#" class="footer-link">Construção Civil</a>
+            <a href="#" class="footer-link">Eletrônica</a>
+            <a href="#" class="footer-link">Ciência de dados</a>
+            <a href="#" class="footer-link">Fl Studio</a>
+            <a href="#" class="footer-link">Produção</a>
+            <a href="#" class="footer-link">Arte</a>
+            <a href="#" class="footer-link">Mais</a>
+        </ul>
+        <div class="mw-100 d-block d-md-none"></div>
+        <ul class="col p-0 d-flex flex-column">
+            <p class="footer-title fw-700">Sobre</p>
+            <a href="#" class="footer-link">Carreiras</a>
+            <a href="#" class="footer-link">Vagas</a>
+            <a href="#" class="footer-link">Contato</a>
+            <a href="#" class="footer-link">Localização</a>
+            <a href="#" class="footer-link">API</a>
+            <a href="#" class="footer-link">CNPJ</a>
+        </ul>
+        <div class="mw-100 d-block d-md-none"></div>
+        <ul class="col p-0 d-flex flex-column">
+            <p class="footer-title fw-700">Ajuda e politicas</p>
+            <a href="#" class="footer-link">Politica de compra</a>
+            <a href="#" class="footer-link">Politica de privacidade</a>
+            <a href="#" class="footer-link">Termos de uso</a>
+            <a href="#" class="footer-link">Ajuda</a>
+        </ul>
+        <div class="mw-100 d-block d-lg-none"></div>
+        <ul class="col p-0 d-flex flex-column">
+            <p class="footer-title fw-700">Comunidade</p>
+            <a href="#" class="footer-link">Se torne Premium</a>
+            <a href="#" class="footer-link">Compartilhe</a>
+            <a href="#" class="footer-link">Doe</a>
+            <a href="#" class="footer-link">Mantenha a comunidade</a>
+            <a href="#" class="footer-link">Bolsas</a>
+            <a href="#" class="footer-link">Internos</a>
+        </ul>
+        <div class="mw-100 d-block d-md-none"></div>
+        <ul class="col p-0 d-flex flex-column">
+            <p class="footer-title fw-700">Extras</p>
+            <a href="#" class="footer-link">Skype</a>
+            <a href="#" class="footer-link">Nuvem</a>
+            <a href="#" class="footer-link">Cloud</a>
+            <a href="#" class="footer-link">AWS</a>
+            <a href="#" class="footer-link">Azure</a>
+            <a href="#" class="footer-link">No things</a>
+            <a href="#" class="footer-link">Github</a>
+            <a href="#" class="footer-link">Twitter</a>
+        </ul>
+    </div>
+</footer>
 
 </body>
 </html>

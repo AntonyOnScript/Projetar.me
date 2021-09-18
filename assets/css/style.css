@@ -31,6 +31,40 @@ a {
     color: var(--color-five) !important;
 }
 
+.border-button-link-2 {
+    padding: 7px 20px;
+    border: 1px solid var(--color-one);
+    color: var(--color-two) !important;
+    border-radius: .3rem;
+    width: fit-content;
+    height: 30px;
+}
+
+.border-button-link-2:hover {
+    background-color: var(--color-two);
+    border: 1px solid var(--color-two);
+    color: var(--color-five) !important;
+}
+
+.links-mobile li a {
+    color: var(--color-one) !important;
+    font-weight: 500;
+}
+
+.links-mobile li.uk-active a {
+    color: #62646a !important;
+    font-weight: 700;
+    border-bottom: 1px solid #62646a;
+}
+
+.links-mobile li.uk-active a:hover {
+    color: #62646a !important;
+}
+
+.links-mobile li a:hover {
+    color: var(--color-two) !important;
+}
+
 .nav-container {
     width: 100%;
 }
@@ -50,9 +84,10 @@ a {
     padding: 15px var(--horizontal-padding);
     color: white;
     width: 100%;
+    flex-wrap: nowrap;
     margin: auto;
     transition: background-color .3s;
-    z-index: 1001;
+    z-index: 997;
 }
 
 .nav-link{
@@ -455,4 +490,30 @@ ul {
 
 .services-title-container {
     padding: 0px 15px;
+}
+
+.mobile-menu {
+    z-index: 999;
+}
+
+.uk-offcanvas-bar {
+    background-color: #fff;
+}
+
+.mobile-menu-button {
+    border: none;
+    padding: 0;
+}
+
+.mobile-menu-icon rect {
+    fill: var(--color-one);
+}
+
+@keyframes showMenu {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
 }
