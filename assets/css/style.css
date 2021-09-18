@@ -281,7 +281,7 @@ a {
     padding: var(--vertical-padding) var(--horizontal-padding-cutted);
 }
 
-.cartaz .founder-text{
+.cartaz .founder-text, .founder-paragraph{
     padding: 0px 68px 0px 64px;
 }
 
@@ -474,8 +474,10 @@ ul {
     .cartaz .founder-text {
         padding: 0px 48px 0px 44px;
     }
+
     .founder-paragraph{
         text-align: center;
+        padding: 0px;
     }
 }
 
