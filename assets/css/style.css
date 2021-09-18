@@ -101,7 +101,7 @@ a {
 .hero {
     background: url('../img/hero.jpg') no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0px 82px;
     color: white;
 }
@@ -386,6 +386,10 @@ ul {
 
     .business-img {
         padding-top: 24px;
+    }
+
+    .hero {
+        align-items: center;
     }
 }
 
