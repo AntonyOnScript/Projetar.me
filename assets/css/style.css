@@ -155,10 +155,6 @@ a {
     box-shadow: 0px 0px 10px #0000006b !important;
 }
 
-.services-title {
-    padding-left: 15px;
-}
-
 .card-text {
     padding: 16px;
 }
@@ -172,25 +168,29 @@ a {
     padding: var(--vertical-padding) var(--horizontal-padding);
 }
 
-.benefits-texts, .announce-texts {
+.benefits-texts, .announce-texts, .business-texts {
     padding-left: 16px;
     padding-right: 140px;
 }
 
 .svg-ok {
     fill: #62646A;
+    min-width: 30px !important;
+    min-height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
 }
 
 .benefits-img {
     border-radius: 2px;
 }
 
-.benefits-title {
+.benefits-title, .business-title {
     padding-bottom: 24px;
 }
 
-.benefits-topic-title {
-    padding-bottom: 8px;
+.benefits-topic-title, .business-topic-title {
+    padding-bottom: 12px;
 }
 
 .benefits-topic-paragraph {
@@ -246,7 +246,7 @@ a {
     padding: var(--vertical-padding) var(--horizontal-padding-cutted);
 }
 
-.cartaz {
+.cartaz .founder-text{
     padding: 0px 68px 0px 64px;
 }
 
@@ -330,7 +330,7 @@ a {
 
 .banner-texts {
     background: url("../img/banner-snippet/background.png");
-    padding: 120px var(--vertical-padding);
+    padding: 120px var(--horizontal-padding);
 }
 
 .banner-texts  h1{
@@ -371,11 +371,11 @@ ul {
 }
 
 @media only screen and (max-width: 1200px) {
-    .benefits-texts, .benefits-img {
+    .benefits-texts, .benefits-img, .business-texts {
         padding: 0px 16px;
     }
 
-    .benefits-texts {
+    .benefits-texts, .business-texts {
         padding-bottom: 24px;
     }
 
@@ -394,6 +394,23 @@ ul {
     .hero {
         align-items: center;
     }
+
+    .banner-snippet {
+        padding: 0px !important;
+    }
+
+    .shift-section {
+        padding: 0px !important;
+    }
+
+    .cartaz-container {
+        padding: var(--vertical-padding) var(--horizontal-padding-cutted);
+    }
+
+    .announce-texts, .banner-snippet {
+        margin-top: 0px !important;
+    }
+
 }
 
 .services .uk-active {
@@ -407,4 +424,35 @@ ul {
 
 .more-projects .uk-panel {
     width: unset;
+}
+
+@media only screen and (max-width: 805px) {
+    .banner-texts h1 {
+        font-size: calc(1.4rem + 1.5vw);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    :root {
+        --horizontal-padding: 62px;
+    }
+    .cartaz .founder-text {
+        padding: 0px 48px 0px 44px;
+    }
+    .founder-paragraph{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
+        --horizontal-padding: 32px;
+    }
+    .banner-texts h1 {
+        font-size: calc(1.3rem + 1.5vw);
+    }
+}
+
+.services-title-container {
+    padding: 0px 15px;
 }
