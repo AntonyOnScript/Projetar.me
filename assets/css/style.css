@@ -383,6 +383,7 @@ a {
 .footer {
     padding: var(--vertical-padding) var(--horizontal-padding);
     font-size: 16px;
+    padding-bottom: 1.5rem;
 }
 
 ul {
@@ -479,6 +480,15 @@ ul {
         text-align: center;
         padding: 0px;
     }
+    .left {
+        flex-direction: column !important;
+    }
+    .left img {
+        padding-bottom: 10px;
+    }
+    .right {
+        justify-content: center !important;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -518,4 +528,28 @@ ul {
     to {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
+}
+
+.footer-footer {
+    border-top: 1px solid #b5b6ba;
+}
+
+.logo-footer {
+    width: 200px;
+}
+
+.footer-footer .left p {
+    color: #b5b6ba;
+}
+
+.svg-footer-link {
+    width: 26px;
+}
+
+.svg-footer-link path{
+    fill: #b5b6ba;
+}
+
+.svg-footer-link:hover path{
+    fill: #7a7d85;
 }
