@@ -1,4 +1,4 @@
-.filter-category-kit {
+.filter-category-kit, .filter-radio-kit {
     padding: 10px 15px;
     border: 1px solid var(--bs-dark);
     background-color: #fff;
@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.options-category-kit {
+.options-category-kit, .options-radio-kit {
     position: absolute;
     top: 44.5px;
     margin-top: 10px;
@@ -34,6 +34,11 @@
 
 .option-main-kit a {
     color: var(--color-two);
+}
+
+.radio-button {
+    vertical-align: middle;
+    margin-bottom: 3.5px;
 }
 
 @keyframes byeIcon {
